@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../Button';
-import Status from '../../Status';
 
+import PrimarySearchAppBar from '../../PrimarySearchAppBar';
+import RecipeReviewCard from '../../Card';
 const link = "https://cdn.rawgit.com/kevinhermawan/ca5e0083648ba5ffb2421808d972dd9c/raw/c29c7ee02849b58024fb6a058acae33bde38cbd3/react-blog-example.json";
 
 
@@ -40,9 +40,11 @@ class Home extends React.Component {
    }
    render () {
       return (
+
          <div>
             { /* <Button onClick={this.handleLogin} children="Login" size="sm"/> */ }
-            Search: <input onChange={this.handleForm} style={{width:'70%'}} value={this.state.keyword}></input>
+            <PrimarySearchAppBar inputOnChange={this.handleForm}/>
+
             {/*<Status
                isAuthenticated={this.state.isAuthenticated}
                name={this.state.name}
@@ -58,10 +60,7 @@ class Home extends React.Component {
                .map(article => {
                   return (
                      <div key={article.id}>
-                        <hr/>
-                        <div style={{marginTop:10}}><b>{article.title}</b></div>
-                        <small>Author: {article.author}</small>
-                        <div>{article.content}</div>
+                        <RecipeReviewCard title={article.title} subheader={article.created_at} content={article.content}/>
                      </div>
                   );
                })
