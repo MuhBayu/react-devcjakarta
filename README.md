@@ -3,8 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-![home](./screenshot/screenshot.png)
-![search](./screenshot/screenshot search.png)
+<img src="./screenshot/screenshot.png" width="350"/>
+<img src="./screenshot/screenshot search.png" width="350"/>
 
 ## Table of Contents
 
